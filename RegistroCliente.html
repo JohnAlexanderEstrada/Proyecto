@@ -1,0 +1,153 @@
+﻿
+<!DOCTYPE html>
+
+<html lang="es-mx">
+<head>
+    <meta charset="utf-8" />
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/jquery"></script>
+    <title>Registro Cliente</title>
+</head>
+<body>
+    <div class="text-center">
+
+        <span class="text-info"><h2>Registro Cliente</h2></span>
+    </div>
+    <div class="container">
+        <div class="row py-3 text-center">
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="py-2"></div>
+                <span class="text-warning">Datos Usuario</span>
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text"></span>
+                    <input type="text" class="form-control" placeholder="Nombre" aria-label="nombre" aria-describedby="addon-wrapping" required>
+                </div>
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text"></span>
+                    <input type="text" class="form-control" placeholder="Apellido Paterno" aria-label="Apellido paterno" aria-describedby="addon-wrapping" required>
+                </div>
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text"></span>
+                    <input type="text" class="form-control" placeholder="Apellido Materno" aria-label="Apellido Materno" aria-describedby="addon-wrapping" required>
+                </div>
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text"></span>
+                    <input type="date" class="form-control" placeholder="Fecha de nacimiento" aria-label="fecha" aria-describedby="addon-wrapping" required>
+                </div>
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text"></span>
+                    <input type="text" class="form-control" placeholder="Correo" aria-label="correo" aria-describedby="addon-wrapping" required>
+                </div>
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text"></span>
+                    <input type="text" class="form-control" placeholder="Telefono" aria-label="telefono" aria-describedby="addon-wrapping" required>
+                </div>
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text"></span>
+                    <input type="password" class="form-control" placeholder="contraseña" aria-label="pass" aria-describedby="addon-wrapping" required>
+                </div>
+
+
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="py-2"></div>
+                <span class="text-warning">Datos Usuario</span>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01"></label>
+                    <select class="form-select" id="inputGroupSelect01">
+                        <option selected>Genero</option>
+                        <option value="1">Masculino</option>
+                        <option value="2">Femenino</option>
+
+                    </select>
+                </div>
+
+
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="py-2"></div>
+                <span class="text-warning">Ingresa tu direccion </span>
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text"></span>
+                    <input type="text" class="form-control" placeholder="Calle" aria-label="calle" aria-describedby="addon-wrapping">
+                </div>
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text"></span>
+                    <input type="text" class="form-control" placeholder="Colonia" aria-label="colonia" aria-describedby="addon-wrapping">
+                </div>
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text"></span>
+                    <input type="text" class="form-control" placeholder="Municipio" aria-label="municipio" aria-describedby="addon-wrapping">
+                </div>
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text"></span>
+                    <input type="text" class="form-control" placeholder="Estado" aria-label="estado" aria-describedby="addon-wrapping">
+                </div>
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text"></span>
+                    <input type="text" class="form-control" placeholder="Domicilio" aria-label="Domicilio" aria-describedby="addon-wrapping">
+                </div>
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text"></span>
+                    <input type="text" class="form-control" placeholder="Codigo Postal" aria-label="CP" aria-describedby="addon-wrapping">
+                </div>
+
+                <p class="text-danger">MAPA</p>
+                <div id="map"></div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d120354.59579285858!2d-99.27264007003586!3d19.49737531628078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1639009607215!5m2!1ses!2smx" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <script src="js/localizacion.js"></script>
+
+                <script src="js/mains.js"></script>
+            </div>
+
+
+        </div>
+    </div>
+    div class="text-center">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Ver Terminos y condiciones
+    </button>
+    </div>
+
+    <!-- Modal -->
+
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Terminos y condiciones</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        TERMINOS Y CONDICIONES
+                        Este contrato describe los términos y condiciones generales aplicables al uso de los
+                        contenidos, y servicios ofrecidos a través del sitio Huitzilopochtli Soft
+                        INFORMACION RELEVANTE
+                        Es requisito necesario para la adquisición de los servicios que se ofrecen en este sitio, que
+                        lea y acepte los siguientes Términos y Condiciones que a continuación se redactan. El uso
+                        de nuestros servicios implicara que usted ha leído y aceptado los Términos y Condiciones
+                        en el presente documento. Todos los servicios que son ofrecidos por nuestro sitio web
+                        podrán ser contratados. En este caso, para adquirir nuestro servicio, será necesario el
+                        registro por parte del usuario, con ingreso de datos personales fidedignos y definición de
+                        una contraseña.
+
+
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Acepto los terminos</label>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <a href="login.html"><button type="button" class="btn btn-primary">Acerptar y continuar</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

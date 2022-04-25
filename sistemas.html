@@ -1,0 +1,91 @@
+﻿<?php
+include 'conect.php';
+include 'validar.php';
+?>
+
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+<section class="vh-100">
+    <div class="container-fluid h-custom">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-9 col-lg-6 col-xl-5">
+               <h3 class="text-danger text-center">ServiWorkersPlace</h3>
+                <img src="img/logoo.png" class="img-fluid"
+                     alt="Sample image">
+            </div>
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                <h2 class="text-warning">Sistemas <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-workspace" viewBox="0 0 16 16">
+  <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H4Zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+  <path d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.373 5.373 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2H2Z"/>
+</svg></h2>
+                <form action="<?php echo $_SERVER ?>" method="post">
+                    
+                    <input type="email" id="mail" name="correo" placeholder="Correo" required />
+                    
+                    <p>Ingrese su correo</p>
+                       
+                    <input type="password" id="pass" name="contra" placeholder="Contraseña" required />
+                   
+                    <p>Ingrese su contraseña</p>
+                   <button type="submit" onclick="validar();" href="Psistemas.html" >Ingresar</button> 
+                </form>
+                <div class="container">
+        
+        
+                <script>
+                    function validar();
+                    C1 = document.getElementById(correo).value;
+                    C2 = document.getElementById(contra).value;
+
+                    if {
+                        C1 = "";
+
+                        alert("Los campos no pueden estar vacios");
+
+                    }
+                        else if{
+                        C2 = "";
+                        alert("Los campos no pueden estar vacios");
+                    }
+                        else {
+                       
+                        return = false;
+
+                    }
+                </script>
+    
+  </div>
+
+
+            
+
+                </form>
+        
+        <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+//(function () {
+  //'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  //var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  //Array.prototype.slice.call(forms)
+    //.forEach(function (form) {
+      //form.addEventListener('submit', function (event) {
+        //if (!form.checkValidity()) {
+          //event.preventDefault()
+          //event.stopPropagation()
+        //}
+
+        //form.classList.add('was-validated')
+      //}, false)
+    //})
+//})()
+        </script>
+        
+    </div>
+</section>
